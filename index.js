@@ -35,7 +35,7 @@ for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         const trimmedInput = rawInput.trim();
 
         if (!/^-?\d+$/.test(trimmedInput)) {
-            throw new Error('Guess must be a valid integer.');
+            throw newErrorf('Guess must be a valid integer.');
         }
 
         const guessVal = Number(trimmedInput);
